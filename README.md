@@ -8,13 +8,21 @@ Creating a deep learning model using convolutional neural network and  keras tha
 ## Methodology
 I will using Covolutional neural network to build a system that would be able to predict whether a concrate is cracked or not.My project includes the following steps outline below;
 Loading, exploration and visualization of image data
+
 Data augmentation
+
 Convolutional neural network model
+
 Model training
+
 Model Evaluation
+
 Accuracy and loss graphs
+
 Predictions 
+
 Classification report
+
 Result
 ## Business goal
 Given that the highest accuracy rate which I know  of so far for such a project is about 99.6%, this project would be successful if I'm able to obtained an accuracy of at least 99.7% accuracy or better
