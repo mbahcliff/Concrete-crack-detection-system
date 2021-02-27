@@ -22,7 +22,9 @@ Given that the highest accuracy rate which I know  of so far for such a project 
 ### Description
 The data set is from the Mendeley data. The data is collected from various Middle East Technical University (METU) Campus Buildings. The dataset was published on 23rd June 2019 by Çağlar Fırat Özgenel [4]
 My dataset is unstructured. The dataset is divided into two as negative and positive crack images for image classification. Each class has 20000images with a total of 40000 images with 227 x 227 pixels with RGB channels.
+
 Link to dataset website: https://data.mendeley.com/datasets/5y9wdsg2zt/2
-Link to dataset:
-https://md-datasets-cache-zipfiles-prod.s3.eu-west-1.amazonaws.com/5y9wdsg2zt-2.zip
+
+Link to dataset: https://md-datasets-cache-zipfiles-prod.s3.eu-west-1.amazonaws.com/5y9wdsg2zt-2.zip
+## Related works
 
