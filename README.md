@@ -90,5 +90,32 @@ The random shifts technique helps in improving those images that are not properl
 
 ![Captur3](https://user-images.githubusercontent.com/63025220/110214171-6d97c800-7e71-11eb-8fa3-bc4c07a351f8.PNG)
 
+Other augmentation techniques ellaborated in the notebook inludes random flips, random brightness and random zoom
 
+## Building the CNN model
+### Creating convolutional base
+The model has  different layers:
 
+Input layer:  This is a layer in which the input image is fed into the CNN model. The input is of shape (image_height, image_width, color_channels).  For this project my input shape is (120, 120, 3)
+
+Three convolutional layer each followed by a MaxPooling ;
+
+Convolutional layer consist of a filter, kernel_size and activation function. This is the stage in which most of the base features such as sharp edges and curves are extracted from the image and hence this layer is also known as the feature extractor layer. 
+
+Pooling layer: The pooling operation is also known as down sampling where the spatial volume of the image is reduced. If we perform a Pooling operation with a stride of 2 on an image with dimensions 28×28, then the image size reduced to 14×14, it gets reduced to half of its original size. 
+
+The activation is a mathematical gate in between the input feeding the current neuron and its output  going to the next layer. They basically decide whether the neuron should be activated or not. 
+
+ReLU activation function is widely used and is default choice as it yields better result
+
+Convolutional base summary
+
+![Captur11](https://user-images.githubusercontent.com/63025220/110214628-74273f00-7e73-11eb-8361-de3610b816ff.PNG)
+
+### Adding the dense layer on top
+
+To complete the model, feed the last output tensor from the convolutional base (of shape (26, 26, 32)) into one or more Dense layers to perform classification. Dense layers take vectors as input (which are 1D), while the current output is a 3D tensor. First, flatten (or unroll) the 3D output to 1D, then add one or more Dense layers on top. My image dataset has 2 output classes, so I will use a final Dense layer with 2 outputs. 
+
+Model summary
+
+![Captur12](https://user-images.githubusercontent.com/63025220/110214719-e9930f80-7e73-11eb-9c51-fc19fe47bbbd.PNG)
