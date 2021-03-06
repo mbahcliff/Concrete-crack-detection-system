@@ -119,3 +119,13 @@ To complete the model, feed the last output tensor from the convolutional base (
 Model summary
 
 ![Captur12](https://user-images.githubusercontent.com/63025220/110214719-e9930f80-7e73-11eb-9c51-fc19fe47bbbd.PNG)
+
+## References
+
+[1] Özgenel, Ç. F. (2019, 07 23). Mendeley Data. Retrieved from Concrete Crack Images for Classification: https://data.mendeley.com/datasets/5y9wdsg2zt/2
+
+[2] SCIENTIFIC, G. (2019, August 17). Evaluating Cracking in Concrete: Procedures. Retrieved from GIATEC: https://www.giatecscientific.com/education/cracking-in-concrete-procedures/
+
+[3] Vadapalli, P. (2021, February 25). Image Classification in CNN: Everything You Need to Know. Retrieved from upgradeblog: https://www.upgrad.com/blog/image-classification-in-cnn/
+
+[4] Wikipedia. (2021, February 13). 2013 Dhaka garment factory collapse. Retrieved from Wikipedia: https://en.wikipedia.org/wiki/2013_Dhaka_garment_factory_collapse
