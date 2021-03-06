@@ -15,10 +15,13 @@ Accuracy and loss graphs
 
 ## Related work
 A  crack detection system was done with a similar dataset- structural network defect dataset(SDNET2018)  which contains over 56000  images of cracked and non-cracked concrete bridge decks, walls, and pavements. Most of the images were captured from Utah State University. The system had an accuracy of 76%
+
 Click on link to see project 
+
 Milind Raj worked on a similar data using RESNET50 and obtained an accuracy rate of 95.3%
+
 Click on the link to see project 
-Result
+
 ## Business goal
 For the projects which I have come across which used a similar dataset as seen above, , an accuracy in the range of 76- 95.3% was obtained. This project would be successful if I'm able to obtained an accuracy of at least 99% or better.
 
