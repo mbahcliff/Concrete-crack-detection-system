@@ -63,12 +63,32 @@ This inolves understanding my datasets by placing it in a visual context so that
 
 ![Capture8](https://user-images.githubusercontent.com/63025220/110213452-1a704600-7e6e-11eb-95e1-de0a50b596f2.PNG)
 
-### Preview of images in train and test dataset
+### Preview of images in train dataset
 
 ![Capture11](https://user-images.githubusercontent.com/63025220/110213557-966a8e00-7e6e-11eb-8061-d8575870e2a7.PNG)
+
+### Preview of images in test dataset
 
 ![Capture13](https://user-images.githubusercontent.com/63025220/110213585-a84c3100-7e6e-11eb-9103-1171b31c0863.PNG)
 
 ## Data augmentation
-Image Augmentation is a way of applying different types of transformation techniques on actual images, thus producing copies of the same image with alterations. This helps to train deep learning models on more image variations than what is present in the actual dataset 
+Image Augmentation is a way of applying different types of transformation techniques on actual images, thus producing copies of the same image with alterations. This helps to train deep learning models on more image variations than what is present in the actual datasetRandom shift
+### Random rotation
+The image rotation technique enables the model by generating images of different orientations. The ImageDataGenerator class in Keras uses this technique to generate randomly rotated images in which the angle can range from 0 degrees to 360 degrees. 
+
+![Captur1](https://user-images.githubusercontent.com/63025220/110213921-1e9d6300-7e70-11eb-834c-6da4d89cce80.PNG)
+
+### Random shift
+
+The random shifts technique helps in improving those images that are not properly positioned . Keras ImageDataGenerator uses parameters height_shift_range for vertical shifts in an image and for horizontal shifts in an image, we can use width_shift_range
+
+### Vertical random shift
+
+![Captur2](https://user-images.githubusercontent.com/63025220/110214085-f2cead00-7e70-11eb-8822-7ee82ce9ff03.PNG)
+
+### Horizontal random shift
+
+![Captur3](https://user-images.githubusercontent.com/63025220/110214171-6d97c800-7e71-11eb-8fa3-bc4c07a351f8.PNG)
+
+
 
