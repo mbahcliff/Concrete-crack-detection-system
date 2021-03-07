@@ -120,6 +120,9 @@ Model summary
 
 ![Captur12](https://user-images.githubusercontent.com/63025220/110214719-e9930f80-7e73-11eb-9c51-fc19fe47bbbd.PNG)
 
+
+## Link to phasee 0 video: https://www.youtube.com/watch?v=CMisxnjuEik
+
 ## References
 
 [1] Özgenel, Ç. F. (2019, 07 23). Mendeley Data. Retrieved from Concrete Crack Images for Classification: https://data.mendeley.com/datasets/5y9wdsg2zt/2
