@@ -123,6 +123,8 @@ Model summary
 
 ## Link to phasee 0 video: https://www.youtube.com/watch?v=CMisxnjuEik
 
+## Link to phase 1 video: https://www.youtube.com/watch?v=djxdvKlHlhA
+
 ## References
 
 [1] Özgenel, Ç. F. (2019, 07 23). Mendeley Data. Retrieved from Concrete Crack Images for Classification: https://data.mendeley.com/datasets/5y9wdsg2zt/2
