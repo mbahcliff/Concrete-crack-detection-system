@@ -226,6 +226,12 @@ It represents the model's score as a function of precision  and recall score. Th
 ###           =  (2 X 0.99) /( 0.99 + 0.99)
 ###           = 0.99
 
+## Classification report
+
+Classification report gives us a summary table containing precision, recall, F1-score and makes it easy for us to observe which class performs better
+
+![Capture26](https://user-images.githubusercontent.com/63025220/114277783-aa1f8c00-99fa-11eb-8de7-fa3b786af337.PNG)
+
 ## Link to phasee 0 video: https://www.youtube.com/watch?v=CMisxnjuEik
 
 ## Link to phase 1 video: https://www.youtube.com/watch?v=djxdvKlHlhA
@@ -239,3 +245,9 @@ It represents the model's score as a function of precision  and recall score. Th
 [3] Vadapalli, P. (2021, February 25). Image Classification in CNN: Everything You Need to Know. Retrieved from upgradeblog: https://www.upgrad.com/blog/image-classification-in-cnn/
 
 [4] Wikipedia. (2021, February 13). 2013 Dhaka garment factory collapse. Retrieved from Wikipedia: https://en.wikipedia.org/wiki/2013_Dhaka_garment_factory_collapse
+
+[5] GreekForGreek. (2020, May 18). Keras.Conv2D Class. Retrieved from GreekForGreek: https://www.geeksforgeeks.org/keras-conv2d-class/
+
+[6] Lathiya, A. (9, September 5). Numpy Argmax: How To Use Np Argmax() Function In Python. Retrieved from https://appdividend.com/2020/03/28/python-numpy-argmax-function-example/
+
+[7] ScienceDirect. (2021). Convolutional Layer. Retrieved from ScienceDirect : https://www.sciencedirect.com/topics/engineering/convolutional-layer
