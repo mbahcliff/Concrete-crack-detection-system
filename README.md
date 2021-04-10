@@ -120,6 +120,111 @@ Model summary
 
 ![Captur12](https://user-images.githubusercontent.com/63025220/110214719-e9930f80-7e73-11eb-9c51-fc19fe47bbbd.PNG)
 
+## Compiling and training the model
+
+After the model is created, it is compiled using the Adam optimizer, one of  the most popular optimization algorithm. Additionally, the loss type is specified as  categorical cross entropy which is used for multi class classification, binary cross entropy can also be used as the loss function. Lastly, the metrics is specified as accuracy
+
+### Compiling the model
+
+To compile our model, the following parameters are needed: Optimizers, loss function and metrics
+### Optimizer
+
+Adam optimizers perform the best on average  compared  to other optimizers.
+
+### Loss function
+
+The loss function used to compile our model is categorical cross entropy. It is used as a loss function for multi class classification model. That is when we have two or more output labels
+### Metrics
+
+The metrics is accuracy
+
+### Training the model
+
+The model is trained with keras fit() function. The model trains for 15 epochs. The fit() function will return a history object; By storing the result of the function in a history, it is used to plot the accuracy and the loss function plots between the training and validation which will help to visualize our model's performance visually. 
+
+![Capture20](https://user-images.githubusercontent.com/63025220/114277063-9161a700-99f7-11eb-9b83-c3dfdcddcade.PNG)
+
+To train our model, the following parameters are needed: number of epochs, validation data and train data
+
+### Epoch
+
+An epoch represents one training step
+
+From the figure above, after 15 epochs a train accuracy of 99.57% was obtained
+
+## Model evaluation on test accuracy
+
+### Accuracy:  99.55% ,  Loss:  2.47%
+
+An accuracy of 99.55% looks impressive!
+
+## Visualizing the  accuracy and loss of my model
+
+Putting my model evaluation into perspective by plotting  the accuracy  and loss plots of the training and validation data
+
+![Capture21](https://user-images.githubusercontent.com/63025220/114277238-60ce3d00-99f8-11eb-9d60-4340a02af112.PNG)
+
+![Capture22](https://user-images.githubusercontent.com/63025220/114277246-70e61c80-99f8-11eb-9ab4-25c2d48e6dc3.PNG)
+
+## Predicting Labels
+
+Model test data prediction gives as floating point values.  It will not be feasible to compare the predicted labels with true test labels. So, I will round off the output which will convert the float values into integers. Further more, I will use np.argmax() to select the index number which has a higher value in a row
+Numpy argmax () is an inbuilt function that is used to get the indices of the maximum element from our array (single dimension array) or any row or column of any given array
+
+![Capture24](https://user-images.githubusercontent.com/63025220/114277359-d803d100-99f8-11eb-8205-1403ab25f04f.PNG)
+
+## Confusion matrix
+
+A confusion matrix is a predictive analytics tool. Specifically, it is a table that displays and compares actual values with the model’s predicted values .
+
+![Capture25](https://user-images.githubusercontent.com/63025220/114277442-3630b400-99f9-11eb-9e84-9fa488f0f28e.PNG)
+
+### True Positive (TP)
+
+True positive represents the value of correct predictions of positives out of actual positive cases. Out of 4003 actual positives, 3968 are correctly predicted positive. Thus, the value of true positive is 3968.
+
+### False Positive (FP)
+
+It represents the value of incorrect positive predictions. The value represents the number of negatives(out of 3997) which gets falsely predicted a positive. Out of 3997 actual negatives, 23 is falsely predicted as positive. Thus the value of false positive is 23.
+
+### True Negative (TN)
+
+True negative represents the value of correct prediction of negatives out of actual negative cases. Out of 3997 actual negatives , 3974 are corrected predicted as negatives. The value of true negatives is 3974.
+
+### False Negative (FN)
+
+False Negative represents the value of incorrect negative predictions. This value represents the  number of actual positives (out of 4003) which gets falsely predicted as negatives. Out of 4003 actual positives, 35 is incorrectly predicted as negatives. Thus the value of False Negative is 35
+
+### Precision
+
+It represents the model's ability to correctly predict the positives out of all the positive prediction it made. It represents the ratio between the number positive samples correctly classified to the total number of samples classified as positive (either correctly or incorrectly).
+
+### Precision score =  TP/(TP+FN)
+###                 = (3968/(23+3968)
+###                 =  0.99
+
+## Recall
+
+Model recall score represents the model's ability to correctly predict the positives out of actual positives. The recall is calculated as the ratio of the true positives to the actual positives
+
+### Recall score = TP/(TP+FN)
+###              = 3968/(3968+35)
+###              = 0.99
+
+## Accuracy score
+It represents the model's ability to correctly predict both the positives and negatives out of all the predictions.
+
+### Accuracy score = (TP+TN)/(TP+FP+TN+FN)
+###                =    (3968 + 35 + 3974 + 23)
+###                =    0.99
+
+## F1-Score
+
+It represents the model's score as a function of precision  and recall score. The F1-score is a way of combining the precision and recall of the model, It is also known as the harmonic mean of the model's precision and  recall
+
+### F1-score  = 2 X Precision score / (Precision score + Recall score)
+###           =  (2 X 0.99) /( 0.99 + 0.99)
+###           = 0.99
 
 ## Link to phasee 0 video: https://www.youtube.com/watch?v=CMisxnjuEik
 
