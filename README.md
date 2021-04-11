@@ -162,9 +162,7 @@ An accuracy of 99.55% looks impressive!
 
 Putting my model evaluation into perspective by plotting  the accuracy  and loss plots of the training and validation data
 
-![Capture21](https://user-images.githubusercontent.com/63025220/114277238-60ce3d00-99f8-11eb-9d60-4340a02af112.PNG)
-
-![Capture22](https://user-images.githubusercontent.com/63025220/114277246-70e61c80-99f8-11eb-9ab4-25c2d48e6dc3.PNG)
+![Capture36](https://user-images.githubusercontent.com/63025220/114305502-4fdc0500-9aa6-11eb-829e-538ee7300514.PNG)
 
 ## Predicting Labels
 
@@ -177,60 +175,62 @@ Numpy argmax () is an inbuilt function that is used to get the indices of the ma
 
 A confusion matrix is a predictive analytics tool. Specifically, it is a table that displays and compares actual values with the model’s predicted values .
 
-![Capture25](https://user-images.githubusercontent.com/63025220/114277442-3630b400-99f9-11eb-9e84-9fa488f0f28e.PNG)
+![Capture27](https://user-images.githubusercontent.com/63025220/114305525-70a45a80-9aa6-11eb-9382-f1403becd67a.PNG)
 
 ### True Positive (TP)
 
-True positive represents the value of correct predictions of positives out of actual positive cases. Out of 4003 actual positives, 3968 are correctly predicted positive. Thus, the value of true positive is 3968.
+True positive represents the value of correct predictions of positives out of actual positive cases. Out of 4003 actual positives, 3978 are correctly predicted positive. Thus, the value of true positive is 3978.
 
 ### False Positive (FP)
 
-It represents the value of incorrect positive predictions. The value represents the number of negatives(out of 3997) which gets falsely predicted a positive. Out of 3997 actual negatives, 23 is falsely predicted as positive. Thus the value of false positive is 23.
+It represents the value of incorrect positive predictions. The value represents the number of negatives(out of 3997) which gets falsely predicted a positive. Out of 3997 actual negatives, 2 is falsely predicted as positive. Thus the value of false positive is 2.
 
 ### True Negative (TN)
 
-True negative represents the value of correct prediction of negatives out of actual negative cases. Out of 3997 actual negatives , 3974 are corrected predicted as negatives. The value of true negatives is 3974.
+True negative represents the value of correct prediction of negatives out of actual negative cases. Out of 3997 actual negatives , 3995 are corrected predicted as negatives. The value of true negatives is 3995.
 
 ### False Negative (FN)
 
-False Negative represents the value of incorrect negative predictions. This value represents the  number of actual positives (out of 4003) which gets falsely predicted as negatives. Out of 4003 actual positives, 35 is incorrectly predicted as negatives. Thus the value of False Negative is 35
+False Negative represents the value of incorrect negative predictions. This value represents the  number of actual positives (out of 4003) which gets falsely predicted as negatives. Out of 4003 actual positives, 25 is incorrectly predicted as negatives. Thus the value of False Negative is 25
+
 
 ### Precision
 
 It represents the model's ability to correctly predict the positives out of all the positive prediction it made. It represents the ratio between the number positive samples correctly classified to the total number of samples classified as positive (either correctly or incorrectly).
 
-### Precision score =  TP/(TP+FN)
-###                 = (3968/(23+3968)
-###                 =  0.99
+### Precision score =  TP/(TP+FP)
+###                 = (3978/(2+3978)
+###                 =  1.00
+
 
 ## Recall
 
 Model recall score represents the model's ability to correctly predict the positives out of actual positives. The recall is calculated as the ratio of the true positives to the actual positives
 
 ### Recall score = TP/(TP+FN)
-###              = 3968/(3968+35)
+###              = 3978/(3978+25)
 ###              = 0.99
 
 ## Accuracy score
 It represents the model's ability to correctly predict both the positives and negatives out of all the predictions.
 
 ### Accuracy score = (TP+TN)/(TP+FP+TN+FN)
-###                =    (3968 + 35 + 3974 + 23)
-###                =    0.99
+###                =  (3978+3995) / (3978 + 25 + 3995 + 2)
+###                =    1.00
 
-## F1-Score
+### F1-Score
 
 It represents the model's score as a function of precision  and recall score. The F1-score is a way of combining the precision and recall of the model, It is also known as the harmonic mean of the model's precision and  recall
 
-### F1-score  = 2 X Precision score / (Precision score + Recall score)
-###           =  (2 X 0.99) /( 0.99 + 0.99)
+### F1-score  = 2 X Precision score X Recall score / (Precision score + Recall score)
+###           =  (2 X 1.00x0.99) /( 1.00+ 0.99)
 ###           = 0.99
 
 ## Classification report
 
 Classification report gives us a summary table containing precision, recall, F1-score and makes it easy for us to observe which class performs better
 
-![Capture26](https://user-images.githubusercontent.com/63025220/114277783-aa1f8c00-99fa-11eb-8de7-fa3b786af337.PNG)
+![Capture29](https://user-images.githubusercontent.com/63025220/114305736-7a7a8d80-9aa7-11eb-802e-355d0f999e3e.PNG)
 
 ## Link to phasee 0 video: https://www.youtube.com/watch?v=CMisxnjuEik
 
