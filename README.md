@@ -236,6 +236,8 @@ Classification report gives us a summary table containing precision, recall, F1-
 
 ## Link to phase 1 video: https://www.youtube.com/watch?v=djxdvKlHlhA
 
+## Link to phase 2 video: https://www.youtube.com/watch?v=kYlO-trq0Bw
+
 ## References
 
 [1] Özgenel, Ç. F. (2019, 07 23). Mendeley Data. Retrieved from Concrete Crack Images for Classification: https://data.mendeley.com/datasets/5y9wdsg2zt/2
