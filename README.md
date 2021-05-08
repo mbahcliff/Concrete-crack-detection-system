@@ -255,12 +255,15 @@ Both classes performed the same in terms of precision, recall and f1-score
 
 My model has a test accuracy of 99.721% which is better than my initial goal of 99.000%. Therefore, my project is successful
 
+## PowerPoint presentation
 
-## Link to phasee 0 video: https://www.youtube.com/watch?v=CMisxnjuEik
+Link to phasee 0 PowerPoint presentation: https://www.youtube.com/watch?v=CMisxnjuEik
 
-## Link to phase 1 video: https://www.youtube.com/watch?v=djxdvKlHlhA
+Link to phase 1 PowerPoint presentation: https://www.youtube.com/watch?v=djxdvKlHlhA
 
-## Link to phase 2 video: https://www.youtube.com/watch?v=kYlO-trq0Bw
+Link to phase 2 PowerPoint presentation: https://www.youtube.com/watch?v=kYlO-trq0Bw
+
+Link to phase 3 powerPoint presentation: https://www.youtube.com/watch?v=h7BwzNJ__Ig
 
 ## References
 
