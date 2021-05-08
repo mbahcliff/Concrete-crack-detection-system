@@ -142,7 +142,8 @@ The metrics is accuracy
 
 The model is trained with keras fit() function. The model trains for 15 epochs. The fit() function will return a history object; By storing the result of the function in a history, it is used to plot the accuracy and the loss function plots between the training and validation which will help to visualize our model's performance visually. 
 
-![Capture20](https://user-images.githubusercontent.com/63025220/114277063-9161a700-99f7-11eb-9b83-c3dfdcddcade.PNG)
+![Capture51](https://user-images.githubusercontent.com/63025220/117546158-13dd8680-aff7-11eb-8c2f-35b05a2843b3.PNG)
+
 
 To train our model, the following parameters are needed: number of epochs, validation data and train data
 
@@ -162,75 +163,98 @@ An accuracy of 99.55% looks impressive!
 
 Putting my model evaluation into perspective by plotting  the accuracy  and loss plots of the training and validation data
 
-![Capture36](https://user-images.githubusercontent.com/63025220/114305502-4fdc0500-9aa6-11eb-829e-538ee7300514.PNG)
+![Capture50](https://user-images.githubusercontent.com/63025220/117546133-fa3c3f00-aff6-11eb-9300-1d8a70b1e1ed.PNG)
 
 ## Predicting Labels
 
-Model test data prediction gives as floating point values.  It will not be feasible to compare the predicted labels with true test labels. So, I will round off the output which will convert the float values into integers. Further more, I will use np.argmax() to select the index number which has a higher value in a row
+Model test data prediction gives us floating point values.  It will not be feasible to compare the predicted labels with true test labels. So, I will round off the output which will convert the float values into integers. Further more, I will use np.argmax() to select the index number which has a higher value in a row
 Numpy argmax () is an inbuilt function that is used to get the indices of the maximum element from our array (single dimension array) or any row or column of any given array
 
-![Capture24](https://user-images.githubusercontent.com/63025220/114277359-d803d100-99f8-11eb-8205-1403ab25f04f.PNG)
+![Capture57](https://user-images.githubusercontent.com/63025220/117545762-2787ed80-aff5-11eb-90dd-6b0ce890169c.PNG)
+
+![Capture52](https://user-images.githubusercontent.com/63025220/117545783-45555280-aff5-11eb-9a10-abad84426f4f.PNG)
 
 ## Confusion matrix
 
 A confusion matrix is a predictive analytics tool. Specifically, it is a table that displays and compares actual values with the model’s predicted values .
 
-![Capture27](https://user-images.githubusercontent.com/63025220/114305525-70a45a80-9aa6-11eb-9382-f1403becd67a.PNG)
+![Capture55](https://user-images.githubusercontent.com/63025220/117545705-e1328e80-aff4-11eb-887d-f6d17884395c.PNG)
 
 ### True Positive (TP)
 
-True positive represents the value of correct predictions of positives out of actual positive cases. Out of 4003 actual positives, 3978 are correctly predicted positive. Thus, the value of true positive is 3978.
+True positive represents the value of correct predictions of positives out of actual positive cases. Out of 4003 actual positives, 3991 are correctly predicted positive. Thus, the value of true positive is 3991.
 
 ### False Positive (FP)
 
-It represents the value of incorrect positive predictions. The value represents the number of negatives(out of 3997) which gets falsely predicted a positive. Out of 3997 actual negatives, 2 is falsely predicted as positive. Thus the value of false positive is 2.
+It represents the value of incorrect positive predictions. The value represents the number of negatives(out of 3997) which gets falsely predicted a positive. Out of 3997 actual negatives, 6 is falsely predicted as positive. Thus the value of false positive is 6.
 
 ### True Negative (TN)
 
-True negative represents the value of correct prediction of negatives out of actual negative cases. Out of 3997 actual negatives , 3995 are corrected predicted as negatives. The value of true negatives is 3995.
+True negative represents the value of correct prediction of negatives out of actual negative cases. Out of 3997 actual negatives , 3991 are corrected predicted as negatives. The value of true negatives is 3991.
 
 ### False Negative (FN)
 
-False Negative represents the value of incorrect negative predictions. This value represents the  number of actual positives (out of 4003) which gets falsely predicted as negatives. Out of 4003 actual positives, 25 is incorrectly predicted as negatives. Thus the value of False Negative is 25
+False Negative represents the value of incorrect negative predictions. This value represents the  number of actual positives (out of 4003) which gets falsely predicted as negatives. Out of 4003 actual positives, 12 is incorrectly predicted as negatives. Thus the value of False Negative is 12
 
+## Performance metrics
 
 ### Precision
 
 It represents the model's ability to correctly predict the positives out of all the positive prediction it made. It represents the ratio between the number positive samples correctly classified to the total number of samples classified as positive (either correctly or incorrectly).
-
 ### Precision score =  TP/(TP+FP)
-###                 = (3978/(2+3978)
+###                 = (3991/(6+3978)
 ###                 =  1.00
 
-
-## Recall
+### Recall
 
 Model recall score represents the model's ability to correctly predict the positives out of actual positives. The recall is calculated as the ratio of the true positives to the actual positives
-
 ### Recall score = TP/(TP+FN)
-###              = 3978/(3978+25)
-###              = 0.99
+###              = 3991/(3991+12)
+###              = 1.00
 
-## Accuracy score
+### Accuracy score
+
 It represents the model's ability to correctly predict both the positives and negatives out of all the predictions.
-
 ### Accuracy score = (TP+TN)/(TP+FP+TN+FN)
-###                =  (3978+3995) / (3978 + 25 + 3995 + 2)
+###                =  (3991+3991) / (3991 + 12 + 3991 + 6)
 ###                =    1.00
 
 ### F1-Score
 
 It represents the model's score as a function of precision  and recall score. The F1-score is a way of combining the precision and recall of the model, It is also known as the harmonic mean of the model's precision and  recall
-
 ### F1-score  = 2 X Precision score X Recall score / (Precision score + Recall score)
-###           =  (2 X 1.00x0.99) /( 1.00+ 0.99)
-###           = 0.99
+###           =  (2 X 1.00x1.00) /( 1.00+ 1.00)
+###           = 1.00
 
 ## Classification report
 
 Classification report gives us a summary table containing precision, recall, F1-score and makes it easy for us to observe which class performs better
 
-![Capture29](https://user-images.githubusercontent.com/63025220/114305736-7a7a8d80-9aa7-11eb-802e-355d0f999e3e.PNG)
+![Capture56](https://user-images.githubusercontent.com/63025220/117545984-2905e580-aff6-11eb-894c-9ee3c5ee3f6b.PNG)
+
+## Pros and cons of the CNN model
+
+### Pros
+In terms of performance, CNN model is very efficient relative to other models
+
+It is simple to implement and requires fewer parameters to build
+
+It is used in various fields and perform major tasks like facial recognition, analyzing documents, understanding climate, image recognition and object identification
+
+### Cons
+
+Overfitting is a common problem when training the model especially when we don’t have enough data to train our model with. This problem  can be resolve by increasing the data through augmentation.
+
+Another common issue is data loss during the training process. This can be reduced by increasing the number of epochs and increasing the amount of data through data augmentation.
+
+If the CNN has several layers, then the training process takes a lot of time if the computer doesn’t consist of a good GPU.
+
+## Conclusion
+
+Both classes performed the same in terms of precision, recall and f1-score
+
+My model has a test accuracy of 99.721% which is better than my initial goal of 99.000%. Therefore, my project is successful
+
 
 ## Link to phasee 0 video: https://www.youtube.com/watch?v=CMisxnjuEik
 
